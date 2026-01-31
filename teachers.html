@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet our qualified English teachers at English Conmigo. CELTA qualified teachers with international experience ready to help you speak confidently.">
+    <meta name="keywords" content="English teachers, CELTA qualified, online English teacher, ESL teacher">
+
+    <title>Our Teachers - English Conmigo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <style>
+        .teacher-profile {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+        }
+
+        .teacher-profile-content {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .teacher-profile-photo {
+            text-align: center;
+        }
+
+        .teacher-profile-photo .teacher-photo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+            font-size: 4rem;
+        }
+
+        .teacher-profile-info h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .teacher-profile-info .location {
+            color: var(--bright-red);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .teacher-profile-info .qualifications {
+            background-color: var(--light-grey);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 1.5rem;
+        }
+
+        .teacher-profile-info .qualifications strong {
+            color: var(--primary-blue);
+        }
+
+        .specialties-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .specialties-list li {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 0.375rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .teacher-profile-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .teacher-profile-info {
+                text-align: left;
+            }
+
+            .specialties-list {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                </a>
+                <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="method.html">Our Method</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#book" class="btn btn-primary btn-small">Book a Lesson</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Teachers</h1>
+            <p>Choose a teacher that fits your style and goals. Every teacher offers engaging, supportive lessons designed for real communication.</p>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section class="section-white">
+        <div class="container">
+
+            <!-- Ali A. -->
+            <div class="teacher-profile" id="ali">
+                <div class="teacher-profile-content">
+                    <div class="teacher-profile-photo">
+                        <div class="teacher-photo">A</div>
+                        <a href="https://calendly.com/englishconmigo/ali" target="_blank" class="btn btn-primary">Book with Ali</a>
+                    </div>
+                    <div class="teacher-profile-info">
+                        <h2>Ali A.</h2>
+                        <p class="location">Founder & Director</p>
+
+                        <div class="qualifications">
+                            <p><strong>Cambridge CELTA Qualified (2013)</strong> | 10+ Years International Teaching Experience</p>
+                        </div>
+
+                        <ul class="specialties-list">
+                            <li>Business English</li>
+                            <li>Conversational English</li>
+                            <li>Confidence Building</li>
+                            <li>Adults</li>
+                        </ul>
+
+                        <p>Ali specialises in conversational English, business communication, and confidence-building. His teaching style is calm, engaging, and tailored to each student's unique needs and goals.</p>
+
+                        <p>What sets Ali apart is his holistic approach. With a background in mentorship, personal development, yoga, and meditation teaching, he understands that learning English is about more than just grammar - it's about building the confidence to express yourself naturally.</p>
+
+                        <p>Ali has taught students from around the world, including in Colombia and Japan, giving him unique insights into the challenges that different language speakers face. He also works in AI consulting, keeping English Conmigo at the cutting edge of modern learning tools.</p>
+
+                        <p><strong>Best for:</strong> Adults seeking business English, professionals wanting to improve their communication skills, and anyone who needs help building speaking confidence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anna F. -->
+            <div class="teacher-profile" id="anna">
+                <div class="teacher-profile-content">
+                    <div class="teacher-profile-photo">
+                        <div class="teacher-photo">A</div>
+                        <a href="https://calendly.com/englishconmigo/anna" target="_blank" class="btn btn-primary">Book with Anna</a>
+                    </div>
+                    <div class="teacher-profile-info">
+                        <h2>Anna F.</h2>
+                        <p class="location">UK</p>
+
+                        <div class="qualifications">
+                            <p><strong>Native English Speaker | CELTA Qualified</strong> | 10 Years Teaching Experience</p>
+                        </div>
+
+                        <ul class="specialties-list">
+                            <li>Kids & Young Adults</li>
+                            <li>Creative Learning</li>
+                            <li>General English</li>
+                            <li>Patient & Supportive</li>
+                        </ul>
+
+                        <p>Anna is a native English speaker from the UK with a warm, friendly, and patient teaching style. She has a special talent for working with kids and young adults, making learning fun and engaging.</p>
+
+                        <p>As an artist and musician, Anna brings creativity and fun into every lesson. Her unique background allows her to use creative approaches to language learning that keep younger students motivated and excited to learn.</p>
+
+                        <p>Anna creates a supportive environment where students feel comfortable making mistakes and trying new things - which is exactly what young learners need to build their confidence.</p>
+
+                        <p><strong>Best for:</strong> Children, teenagers, and young adults looking for a patient, creative teacher who makes learning enjoyable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- James McIntyre -->
+            <div class="teacher-profile" id="james">
+                <div class="teacher-profile-content">
+                    <div class="teacher-profile-photo">
+                        <div class="teacher-photo">J</div>
+                        <a href="https://calendly.com/englishconmigo/james" target="_blank" class="btn btn-primary">Book with James</a>
+                    </div>
+                    <div class="teacher-profile-info">
+                        <h2>James McIntyre</h2>
+                        <p class="location">UK</p>
+
+                        <div class="qualifications">
+                            <p><strong>Native English Speaker | CELTA Qualified</strong> | 12 Years Teaching Experience (8 years in Spain)</p>
+                        </div>
+
+                        <ul class="specialties-list">
+                            <li>General Conversational</li>
+                            <li>All Age Groups</li>
+                            <li>Storytelling</li>
+                            <li>Energetic & Engaging</li>
+                        </ul>
+
+                        <p>James is a native English speaker from the UK with over 12 years of teaching experience, including 8 years teaching in Spain. His energetic and engaging style makes lessons feel dynamic and enjoyable.</p>
+
+                        <p>James welcomes students of all ages and levels. His background as a creative screenwriter and keen hiker means he's full of interesting stories and topics to discuss - perfect for learners who enjoy lively conversation and storytelling.</p>
+
+                        <p>Having spent years in Spain, James has a deep understanding of the specific challenges that Spanish speakers face when learning English, and knows exactly how to help.</p>
+
+                        <p><strong>Best for:</strong> Learners of any age who want an energetic teacher, enjoy storytelling and conversation, or are Spanish speakers looking for someone who understands their learning challenges.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How to Choose Section -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Choose Your Teacher</h2>
+                <p>Not sure which teacher is right for you? Here's a quick guide.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <h3 style="color: var(--bright-red);">Choose Ali if...</h3>
+                    <ul style="text-align: left;">
+                        <li>You need business English</li>
+                        <li>You want to build speaking confidence</li>
+                        <li>You're an adult professional</li>
+                        <li>You want a calm, tailored approach</li>
+                    </ul>
+                </div>
+                <div class="card text-center">
+                    <h3 style="color: var(--bright-red);">Choose Anna if...</h3>
+                    <ul style="text-align: left;">
+                        <li>You're a child or young adult</li>
+                        <li>You learn best with creativity</li>
+                        <li>You need extra patience</li>
+                        <li>You want fun, engaging lessons</li>
+                    </ul>
+                </div>
+                <div class="card text-center">
+                    <h3 style="color: var(--bright-red);">Choose James if...</h3>
+                    <ul style="text-align: left;">
+                        <li>You want energetic lessons</li>
+                        <li>You enjoy storytelling</li>
+                        <li>You're a Spanish speaker</li>
+                        <li>You want lively conversation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Still Not Sure?</h2>
+            <p>Book a free 15-minute consultation and we'll help you find the perfect teacher match.</p>
+            <a href="index.html#book" class="btn btn-primary">Book Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                    <p>A modern online English academy focused on conversation, confidence, and enjoyment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Our Teachers</a></li>
+                        <li><a href="method.html">Our Method</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/englishconmigo" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:ali@englishconmigo.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 English Conmigo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

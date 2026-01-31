@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read what students say about English Conmigo. Real testimonials from students in Saudi Arabia, Colombia, UAE and more.">
+    <meta name="keywords" content="English Conmigo reviews, English teacher testimonials, student reviews, ESL reviews">
+
+    <title>Testimonials - English Conmigo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <style>
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card-full {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-card-full::before {
+            content: '"';
+            position: absolute;
+            top: 1.5rem;
+            left: 2rem;
+            font-size: 5rem;
+            color: var(--light-grey);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-card-full .testimonial-text {
+            padding-top: 3rem;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--text-medium);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-card-full .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--light-grey);
+        }
+
+        .testimonial-card-full .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #006699 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .testimonial-card-full .author-info h4 {
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-card-full .author-info .country {
+            color: var(--bright-red);
+            font-weight: 500;
+        }
+
+        .country-flags {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .country-flag {
+            text-align: center;
+        }
+
+        .country-flag .flag {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .country-flag span {
+            display: block;
+            color: var(--text-medium);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                </a>
+                <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="method.html">Our Method</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#book" class="btn btn-primary btn-small">Book a Lesson</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>What Our Students Say</h1>
+            <p>Real feedback from real students around the world.</p>
+        </div>
+    </section>
+
+    <!-- Global Reach -->
+    <section class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Students from Around the World</h2>
+                <p>We're proud to help English learners from many different countries.</p>
+            </div>
+
+            <div class="country-flags">
+                <div class="country-flag">
+                    <div class="flag">&#127480;&#127462;</div>
+                    <span>Saudi Arabia</span>
+                </div>
+                <div class="country-flag">
+                    <div class="flag">&#127464;&#127476;</div>
+                    <span>Colombia</span>
+                </div>
+                <div class="country-flag">
+                    <div class="flag">&#127462;&#127466;</div>
+                    <span>UAE</span>
+                </div>
+                <div class="country-flag">
+                    <div class="flag">&#127471;&#127477;</div>
+                    <span>Japan</span>
+                </div>
+                <div class="country-flag">
+                    <div class="flag">&#127463;&#127479;</div>
+                    <span>Brazil</span>
+                </div>
+                <div class="country-flag">
+                    <div class="flag">&#127474;&#127485;</div>
+                    <span>Mexico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="testimonials-grid">
+
+                <!-- Reem F -->
+                <div class="testimonial-card-full">
+                    <p class="testimonial-text">Ali made learning English fun and exciting. He helped me with speaking and correcting my grammar. I always looked forward to our lessons because they never felt like work.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Reem F.</h4>
+                            <span class="country">Saudi Arabia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hassan A -->
+                <div class="testimonial-card-full">
+                    <p class="testimonial-text">One hour of talking and learning felt like 10 minutes. I really enjoyed learning with you. The time flew by because the conversations were so engaging and interesting.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">H</div>
+                        <div class="author-info">
+                            <h4>Hassan A.</h4>
+                            <span class="country">Saudi Arabia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Juliana -->
+                <div class="testimonial-card-full">
+                    <p class="testimonial-text">Ali is friendly, positive, and smart. I always have fun with our conversations. He creates such a comfortable environment that I never feel nervous about making mistakes.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>Juliana</h4>
+                            <span class="country">Colombia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sara -->
+                <div class="testimonial-card-full">
+                    <p class="testimonial-text">Ali is patient, understanding, and truly supportive. He helped me improve my English for work and made me feel comfortable speaking. I've gained so much confidence since starting.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Sara</h4>
+                            <span class="country">Saudi Arabia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ahmed -->
+                <div class="testimonial-card-full">
+                    <p class="testimonial-text">I've been learning for almost a year and I'm very happy with my improvement. Lessons feel like speaking with a friend while learning new expressions. It's the perfect combination of fun and learning.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Ahmed</h4>
+                            <span class="country">Saudi Arabia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noor -->
+                <div class="testimonial-card-full">
+                    <p class="testimonial-text">Professional, kind, calm, and patient. Lessons were enriching and useful, with great correction and guidance. I appreciate how Ali explains things clearly and never makes me feel rushed.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">N</div>
+                        <div class="author-info">
+                            <h4>Noor</h4>
+                            <span class="country">UAE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edison -->
+                <div class="testimonial-card-full">
+                    <p class="testimonial-text">The best teacher I had. We had a lot of fun and I made the most progress. Gracias Profe! I highly recommend English Conmigo to anyone who wants to improve their English.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">E</div>
+                        <div class="author-info">
+                            <h4>Edison</h4>
+                            <span class="country">Colombia</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Stats -->
+    <section class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Students Love Us</h2>
+            </div>
+            <div class="grid-4">
+                <div class="card text-center">
+                    <h3 style="font-size: 2.5rem; color: var(--bright-red);">10+</h3>
+                    <p>Years Teaching Experience</p>
+                </div>
+                <div class="card text-center">
+                    <h3 style="font-size: 2.5rem; color: var(--bright-red);">100%</h3>
+                    <p>CELTA Qualified Teachers</p>
+                </div>
+                <div class="card text-center">
+                    <h3 style="font-size: 2.5rem; color: var(--bright-red);">6+</h3>
+                    <p>Countries Represented</p>
+                </div>
+                <div class="card text-center">
+                    <h3 style="font-size: 2.5rem; color: var(--bright-red);">55</h3>
+                    <p>Minutes of Quality Teaching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join Our Happy Students</h2>
+            <p>Start your journey to confident English speaking today.</p>
+            <a href="index.html#book" class="btn btn-primary">Book Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                    <p>A modern online English academy focused on conversation, confidence, and enjoyment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Our Teachers</a></li>
+                        <li><a href="method.html">Our Method</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/englishconmigo" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:ali@englishconmigo.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 English Conmigo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

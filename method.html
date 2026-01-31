@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the English Conmigo method - conversation-first, confidence-focused English learning that helps you speak naturally and enjoy the process.">
+    <meta name="keywords" content="English learning method, conversation English, confidence building, learn English naturally">
+
+    <title>Our Method - Why Choose English Conmigo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <style>
+        .method-step {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+        }
+
+        .method-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            min-width: 80px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #006699 100%);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--light-grey);
+        }
+
+        .comparison-table th {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .comparison-table th:first-child {
+            border-radius: var(--border-radius) 0 0 0;
+        }
+
+        .comparison-table th:last-child {
+            border-radius: 0 var(--border-radius) 0 0;
+        }
+
+        .comparison-table tr:hover {
+            background-color: var(--light-grey);
+        }
+
+        .check-icon {
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        .x-icon {
+            color: var(--bright-red);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .method-step,
+            .method-step:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number {
+                margin: 0 auto;
+            }
+
+            .comparison-table {
+                font-size: 0.875rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                </a>
+                <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="method.html">Our Method</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#book" class="btn btn-primary btn-small">Book a Lesson</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Why Choose Us</h1>
+            <p>Our conversation-first method helps you speak naturally and build real confidence.</p>
+        </div>
+    </section>
+
+    <!-- Our Method Intro -->
+    <section class="section-white">
+        <div class="container-narrow">
+            <h2 class="text-center mb-4">Our Method</h2>
+            <p class="text-center" style="font-size: 1.1rem;">We focus on what helps you speak naturally - not just what helps you memorize rules. Our lessons are conversation-first, practical, and designed to build real confidence.</p>
+            <p class="text-center" style="font-size: 1.1rem;">You'll practice consistently with a teacher who guides you, corrects you kindly, and helps you sound more natural over time. Most importantly: we keep learning enjoyable - when you look forward to lessons, you progress faster.</p>
+        </div>
+    </section>
+
+    <!-- What Makes Us Different -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Makes English Conmigo Different</h2>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="promise-icon" style="margin-bottom: 1rem;">&#128172;</div>
+                    <h3>Conversation-First</h3>
+                    <p>You'll speak more in every lesson. We believe that the best way to learn a language is by using it, not just studying rules about it. From day one, you'll be having real conversations.</p>
+                </div>
+                <div class="card">
+                    <div class="promise-icon" style="margin-bottom: 1rem;">&#127775;</div>
+                    <h3>Confidence-Focused</h3>
+                    <p>Learn without pressure or judgement. Making mistakes is part of learning, and our teachers create a safe space where you feel comfortable trying, failing, and improving.</p>
+                </div>
+                <div class="card">
+                    <div class="promise-icon" style="margin-bottom: 1rem;">&#128197;</div>
+                    <h3>Flexible</h3>
+                    <p>Schedule lessons around your life. We understand that you have other commitments, so we make it easy to book lessons that work with your schedule.</p>
+                </div>
+                <div class="card">
+                    <div class="promise-icon" style="margin-bottom: 1rem;">&#128187;</div>
+                    <h3>Modern Support</h3>
+                    <p>Helpful resources between lessons, including AI tools where useful. We leverage technology to enhance your learning while keeping the human connection at the center.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Your journey to confident English speaking in four simple steps.</p>
+            </div>
+
+            <div class="method-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Book Your Free Consultation</h3>
+                    <p>Start with a free 15-minute consultation where we'll discuss your goals, assess your current level, and help you choose the right teacher. No pressure, no commitment - just a friendly chat to see if we're the right fit for you.</p>
+                </div>
+            </div>
+
+            <div class="method-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Get Matched with Your Teacher</h3>
+                    <p>Based on your goals, learning style, and schedule, we'll recommend the perfect teacher for you. Whether you need business English with Ali, creative lessons with Anna, or energetic conversations with James - we'll find your match.</p>
+                </div>
+            </div>
+
+            <div class="method-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Start Your Lessons</h3>
+                    <p>Book your lessons at times that suit you. Each 55-minute session is packed with conversation, practical exercises, and personalized feedback. Your teacher will track your progress and adapt to your needs.</p>
+                </div>
+            </div>
+
+            <div class="method-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Practice & Progress</h3>
+                    <p>Between lessons, you'll have access to resources and support to keep improving. The more you practice, the faster you'll progress. Most students notice significant improvements within just a few weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditional vs English Conmigo -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="section-header">
+                <h2>Traditional Learning vs. English Conmigo</h2>
+            </div>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Traditional Methods</th>
+                        <th>English Conmigo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Focus</strong></td>
+                        <td>Grammar rules and memorization</td>
+                        <td>Real conversation and practical usage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Speaking Practice</strong></td>
+                        <td>Limited - mostly reading and writing</td>
+                        <td>Extensive - speak from day one</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mistakes</strong></td>
+                        <td>Penalized and discouraged</td>
+                        <td>Welcomed as part of learning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Atmosphere</strong></td>
+                        <td>Formal and pressure-filled</td>
+                        <td>Friendly and supportive</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Content</strong></td>
+                        <td>Textbook-based, often boring</td>
+                        <td>Personalized to your interests</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Progress</strong></td>
+                        <td>Slow - lots of theory, little practice</td>
+                        <td>Fast - immediate practical application</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Confidence</strong></td>
+                        <td>Often decreases due to fear of mistakes</td>
+                        <td>Builds steadily through encouragement</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Our Promise -->
+    <section class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Promise to You</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <h3>Qualified Teachers</h3>
+                    <p>All our teachers are CELTA qualified with years of international teaching experience. You're learning from professionals.</p>
+                </div>
+                <div class="card text-center">
+                    <h3>Personalized Learning</h3>
+                    <p>No one-size-fits-all approach. Your lessons are tailored to your goals, interests, and learning style.</p>
+                </div>
+                <div class="card text-center">
+                    <h3>Real Results</h3>
+                    <p>Our students see genuine improvement in their speaking confidence and natural communication skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Try a Different Approach?</h2>
+            <p>Experience the English Conmigo difference with a free consultation.</p>
+            <a href="index.html#book" class="btn btn-primary">Book Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                    <p>A modern online English academy focused on conversation, confidence, and enjoyment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Our Teachers</a></li>
+                        <li><a href="method.html">Our Method</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/englishconmigo" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:ali@englishconmigo.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 English Conmigo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

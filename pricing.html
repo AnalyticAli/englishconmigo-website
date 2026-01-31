@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="English Conmigo pricing - affordable 1-to-1 and group English lessons. Individual lessons from $35, group classes from $20. Lesson packages available.">
+    <meta name="keywords" content="English lesson prices, online English cost, English tutor rates, ESL pricing">
+
+    <title>Pricing - English Conmigo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .pricing-section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--light-grey);
+        }
+
+        .savings-badge {
+            background-color: var(--accent-green);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 1.5rem 1.25rem;
+            color: var(--text-medium);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        @media (max-width: 992px) {
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                </a>
+                <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="method.html">Our Method</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#book" class="btn btn-primary btn-small">Book a Lesson</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Simple, Transparent Pricing</h1>
+            <p>Quality English lessons at fair prices. No hidden fees.</p>
+        </div>
+    </section>
+
+    <!-- 1-to-1 Lessons -->
+    <section class="section-white">
+        <div class="container">
+            <h2 class="pricing-section-title">1-to-1 Private Lessons</h2>
+
+            <div class="pricing-grid">
+                <!-- Single Lesson -->
+                <div class="pricing-card">
+                    <h3>Single Lesson</h3>
+                    <div class="price">$35</div>
+                    <p class="per-lesson">55 minutes</p>
+                    <ul>
+                        <li>One 55-minute private lesson</li>
+                        <li>Choose any available teacher</li>
+                        <li>Personalized to your goals</li>
+                        <li>Flexible scheduling</li>
+                        <li>No commitment required</li>
+                    </ul>
+                    <a href="https://calendly.com/englishconmigo" target="_blank" class="btn btn-primary">Book Now</a>
+                </div>
+
+                <!-- 5-Lesson Pack -->
+                <div class="pricing-card featured">
+                    <h3>5-Lesson Pack <span class="savings-badge">Save 3%</span></h3>
+                    <div class="price">$170</div>
+                    <p class="per-lesson">$34 per lesson</p>
+                    <ul>
+                        <li>Five 55-minute private lessons</li>
+                        <li>Save $5 compared to single lessons</li>
+                        <li>Use within 3 months</li>
+                        <li>Same teacher consistency</li>
+                        <li>Perfect for getting started</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/englishconmigo-5pack" target="_blank" class="btn btn-primary">Buy Now</a>
+                </div>
+
+                <!-- 10-Lesson Pack -->
+                <div class="pricing-card">
+                    <h3>10-Lesson Pack <span class="savings-badge">Save 9%</span></h3>
+                    <div class="price">$320</div>
+                    <p class="per-lesson">$32 per lesson</p>
+                    <ul>
+                        <li>Ten 55-minute private lessons</li>
+                        <li>Save $30 compared to single lessons</li>
+                        <li>Use within 6 months</li>
+                        <li>Maximum flexibility</li>
+                        <li>Best for committed learners</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/englishconmigo-10pack" target="_blank" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Classes -->
+    <section class="section-grey">
+        <div class="container">
+            <h2 class="pricing-section-title">Group Conversation Classes</h2>
+
+            <div class="pricing-grid">
+                <!-- Single Group Class -->
+                <div class="pricing-card">
+                    <h3>Single Group Class</h3>
+                    <div class="price">$20</div>
+                    <p class="per-lesson">55 minutes | Max 6 students</p>
+                    <ul>
+                        <li>One group conversation class</li>
+                        <li>Small group (max 6 students)</li>
+                        <li>Practice with other learners</li>
+                        <li>Fun, engaging topics</li>
+                        <li>Subject to availability</li>
+                    </ul>
+                    <a href="https://calendly.com/englishconmigo/group" target="_blank" class="btn btn-secondary">Join Class</a>
+                </div>
+
+                <!-- Monthly Group -->
+                <div class="pricing-card featured">
+                    <h3>Monthly Group <span class="savings-badge">Save 12%</span></h3>
+                    <div class="price">$70</div>
+                    <p class="per-lesson">$17.50 per class | 4 classes/month</p>
+                    <ul>
+                        <li>Four group classes per month</li>
+                        <li>Weekly practice opportunity</li>
+                        <li>Build relationships with classmates</li>
+                        <li>Consistent learning routine</li>
+                        <li>Priority booking</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/englishconmigo-group-monthly" target="_blank" class="btn btn-primary">Subscribe</a>
+                </div>
+
+                <!-- Coming Soon -->
+                <div class="pricing-card" style="opacity: 0.7;">
+                    <h3>Specialty Workshops</h3>
+                    <div class="price">$40</div>
+                    <p class="per-lesson">90 minutes | Intensive focus</p>
+                    <ul>
+                        <li>Pronunciation workshops</li>
+                        <li>Business English sessions</li>
+                        <li>Exam preparation groups</li>
+                        <li>Coming soon!</li>
+                        <li>Join newsletter for updates</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Notified</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate -->
+    <section class="section-white">
+        <div class="container">
+            <h2 class="pricing-section-title">Corporate Training</h2>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Corporate Hour</h3>
+                    <div class="price">$120</div>
+                    <p class="per-lesson">60 minutes</p>
+                    <ul>
+                        <li>One-hour corporate session</li>
+                        <li>Tailored business content</li>
+                        <li>Individual or small team</li>
+                        <li>Flexible scheduling</li>
+                        <li>Invoice available</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Starter Package</h3>
+                    <div class="price">$1,000</div>
+                    <p class="per-lesson">10 hours | $100/hour</p>
+                    <ul>
+                        <li>10 hours of corporate training</li>
+                        <li>Needs assessment included</li>
+                        <li>Custom curriculum</li>
+                        <li>Progress reports</li>
+                        <li>Valid for 6 months</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary">Get Quote</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Professional Package</h3>
+                    <div class="price">$1,800</div>
+                    <p class="per-lesson">20 hours | $90/hour</p>
+                    <ul>
+                        <li>20 hours of corporate training</li>
+                        <li>Full needs assessment</li>
+                        <li>Custom materials provided</li>
+                        <li>Monthly progress reports</li>
+                        <li>Priority scheduling</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary">Get Quote</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p style="color: var(--text-medium);">Need a custom corporate solution? <a href="contact.html">Contact us</a> to discuss your team's needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="container-narrow">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How do I pay for lessons?
+                    </div>
+                    <div class="faq-answer">
+                        We accept payment via Stripe (credit/debit cards). For lesson packages, you'll receive a secure payment link. Single lessons can be paid when booking through Calendly.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What if I need to cancel a lesson?
+                    </div>
+                    <div class="faq-answer">
+                        We understand things come up! Please give us at least 24 hours notice to reschedule without charge. Late cancellations may be charged as the lesson slot was held for you.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do lesson packages expire?
+                    </div>
+                    <div class="faq-answer">
+                        5-lesson packs should be used within 3 months, and 10-lesson packs within 6 months. If you need an extension, just let us know - we're flexible!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Can I try before I buy?
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We offer a free 15-minute consultation to discuss your goals and see if we're the right fit. No obligation, no pressure.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do you offer refunds?
+                    </div>
+                    <div class="faq-answer">
+                        Unused lessons in packages can be refunded within 30 days of purchase. After that, packages are non-refundable but can be transferred to another student with our approval.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What's included in a lesson?
+                    </div>
+                    <div class="faq-answer">
+                        Each lesson includes 55 minutes of personalized instruction, conversation practice, feedback on your English, and follow-up materials or notes as needed.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Book your free consultation and we'll help you choose the right option for your goals.</p>
+            <a href="index.html#book" class="btn btn-primary">Book Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                    <p>A modern online English academy focused on conversation, confidence, and enjoyment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Our Teachers</a></li>
+                        <li><a href="method.html">Our Method</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/englishconmigo" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:ali@englishconmigo.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 English Conmigo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

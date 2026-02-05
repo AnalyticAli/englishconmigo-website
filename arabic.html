@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="English Conmigo - دروس إنجليزية أونلاين مع مدرسين خبراء. تعلم التحدث بالإنجليزية بثقة. دروس مخصصة للناطقين بالعربية.">
+    <meta name="keywords" content="دروس إنجليزية أونلاين, مدرس إنجليزي, تعلم الإنجليزية, إنجليزي للعرب">
+
+    <title>تعلم الإنجليزية بثقة - English Conmigo</title>
+
+    <!-- Google Fonts - Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Cairo', sans-serif;
+        }
+        .lang-switch {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1001;
+        }
+        .lang-switch a {
+            background: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            font-size: 0.875rem;
+            color: var(--primary-blue);
+            font-weight: 500;
+        }
+        .lang-switch a:hover {
+            background: var(--light-grey);
+        }
+        .hero-landing {
+            background: linear-gradient(-135deg, rgba(225, 6, 0, 0.2) 0%, transparent 45%), linear-gradient(-135deg, var(--primary-blue) 0%, #006699 100%);
+            color: var(--white);
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .hero-landing h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        .hero-landing p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+        .teacher-mini {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+        .teacher-mini-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .teacher-mini-info h4 {
+            margin-bottom: 0.25rem;
+            color: var(--primary-blue);
+        }
+        .teacher-mini-info p {
+            color: var(--text-medium);
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+        .benefits-list li {
+            padding: 1rem 0;
+            padding-right: 2.5rem;
+            position: relative;
+            border-bottom: 1px solid var(--light-grey);
+        }
+        .benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .benefits-list li:last-child {
+            border-bottom: none;
+        }
+        .cta-box {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+        }
+        .cta-box h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+        .cta-box p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        .testimonial-ar {
+            background: var(--light-grey);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .testimonial-ar::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-blue);
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            font-family: Georgia, serif;
+        }
+        .testimonial-ar p {
+            font-style: italic;
+            padding-top: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 2;
+        }
+        .testimonial-ar .author {
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+        .grid-2 {
+            direction: rtl;
+        }
+        @media (max-width: 768px) {
+            .hero-landing h1 { font-size: 2.25rem; }
+            .teacher-mini { flex-direction: column; text-align: center; }
+            .benefits-list li { padding-right: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switch -->
+    <div class="lang-switch">
+        <a href="index.html">English</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-landing">
+        <div class="container">
+            <img src="assets/images/logo.png" alt="English Conmigo" style="height: 100px; margin: 0 auto 2rem; border-radius: 8px;">
+            <h1>تحدث الإنجليزية بثقة</h1>
+            <p>دروس إنجليزية أونلاين ممتعة وفعّالة مع مدرسين خبراء. مصممة خصيصاً للناطقين بالعربية.</p>
+            <a href="https://calendly.com/english-conmigo" target="_blank" class="btn btn-primary">احجز درسك الآن</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-white">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 4rem;">
+                <div>
+                    <h2>لماذا English Conmigo؟</h2>
+                    <p>منذ عام 2017، ساعدنا طلاباً من جميع أنحاء العالم على التحدث بالإنجليزية بثقة. طريقتنا تركز على المحادثة الحقيقية، وليس على التمارين المملة.</p>
+                    <ul class="benefits-list">
+                        <li><strong>مدرسون معتمدون</strong> - جميعهم حاصلون على شهادة CELTA مع خبرة دولية</li>
+                        <li><strong>دروس مخصصة</strong> - مصممة حسب أهدافك ومستواك</li>
+                        <li><strong>بيئة مريحة</strong> - تعلم بدون ضغط أو خوف من الأخطاء</li>
+                        <li><strong>مرونة كاملة</strong> - دروس أونلاين في الوقت المناسب لك</li>
+                        <li><strong>التركيز على المحادثة</strong> - تدرب على التحدث من اليوم الأول</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="testimonial-ar">
+                        <p>"علي جعل تعلم الإنجليزية ممتعاً ومثيراً. ساعدني في التحدث وتصحيح قواعدي. كنت دائماً أتطلع لدروسنا."</p>
+                        <span class="author">— ريم، السعودية</span>
+                    </div>
+                    <div class="testimonial-ar">
+                        <p>"ساعة من الحديث والتعلم شعرت وكأنها 10 دقائق. استمتعت حقاً بالتعلم معك."</p>
+                        <span class="author">— حسن، السعودية</span>
+                    </div>
+                    <div class="testimonial-ar">
+                        <p>"محترف، لطيف، هادئ وصبور. كانت الدروس غنية ومفيدة مع توجيه وتصحيح رائع."</p>
+                        <span class="author">— نور، الإمارات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="section-header">
+                <h2>مدرسونا</h2>
+                <p>مدرسون خبراء لديهم خبرة في تعليم الناطقين بالعربية.</p>
+            </div>
+            <div class="container-narrow">
+                <div class="teacher-mini">
+                    <div class="teacher-mini-photo">A</div>
+                    <div class="teacher-mini-info">
+                        <h4>علي - المؤسس والمدير</h4>
+                        <p>حاصل على شهادة CELTA مع أكثر من 10 سنوات خبرة. يفهم التحديات الخاصة التي يواجهها الناطقون بالعربية. متخصص في إنجليزي الأعمال والمحادثة.</p>
+                    </div>
+                </div>
+                <div class="teacher-mini">
+                    <div class="teacher-mini-photo">A</div>
+                    <div class="teacher-mini-info">
+                        <h4>آنا - متخصصة في الشباب</h4>
+                        <p>من المملكة المتحدة. خبيرة في تعليم الأطفال والمراهقين بأساليب إبداعية وممتعة.</p>
+                    </div>
+                </div>
+                <div class="teacher-mini">
+                    <div class="teacher-mini-photo">J</div>
+                    <div class="teacher-mini-info">
+                        <h4>جيمس - محادثة عامة</h4>
+                        <p>من المملكة المتحدة. لديه خبرة واسعة مع الطلاب من جميع المستويات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>أسعار بسيطة وشفافة</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <h3>درس فردي</h3>
+                    <p style="font-size: 2.5rem; font-weight: 700; color: var(--primary-blue); margin: 1rem 0;">$35</p>
+                    <p style="color: var(--text-medium);">55 دقيقة من التعليم المخصص</p>
+                </div>
+                <div class="card text-center" style="border: 2px solid var(--bright-red);">
+                    <h3>باقة 5 دروس</h3>
+                    <p style="font-size: 2.5rem; font-weight: 700; color: var(--primary-blue); margin: 1rem 0;">$170</p>
+                    <p style="color: var(--text-medium);">وفر $5 لكل درس</p>
+                </div>
+                <div class="card text-center">
+                    <h3>باقة 10 دروس</h3>
+                    <p style="font-size: 2.5rem; font-weight: 700; color: var(--primary-blue); margin: 1rem 0;">$320</p>
+                    <p style="color: var(--text-medium);">وفر $30 إجمالاً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="container-narrow">
+                <div class="cta-box">
+                    <h2>هل أنت مستعد للبدء؟</h2>
+                    <p>احجز درسك الأول واكتشف كم يمكن أن يكون تعلم الإنجليزية ممتعاً.</p>
+                    <a href="https://calendly.com/english-conmigo" target="_blank" class="btn btn-primary" style="background: var(--white); color: var(--primary-blue);">احجز درسك الآن</a>
+                    <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">هل لديك أسئلة؟ راسلنا على <a href="mailto:hello@englishconmigo.com" style="color: var(--white);">hello@englishconmigo.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Option -->
+    <section class="section-white">
+        <div class="container text-center">
+            <p style="font-size: 1.1rem; color: var(--text-medium);">تفضل التواصل عبر واتساب؟ <a href="contact.html">تواصل معنا</a> للحصول على رقم الواتساب.</p>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer style="padding: 2rem 0;">
+        <div class="container text-center">
+            <p style="opacity: 0.8;">&copy; 2026 English Conmigo. نعلم الإنجليزية بثقة منذ 2017.</p>
+            <p style="margin-top: 0.5rem;"><a href="index.html" style="color: var(--white); opacity: 0.8;">View in English</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="English Conmigo is coming to Valencia! Join our in-person English classes, group sessions, and children's activities. Sign up for updates.">
+    <meta name="keywords" content="English classes Valencia, learn English Valencia, English teacher Valencia, clases de inglés Valencia">
+
+    <title>English Conmigo in Valencia - Coming Soon</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <style>
+        .hero-valencia {
+            background: linear-gradient(135deg, rgba(225, 6, 0, 0.25) 0%, transparent 50%), linear-gradient(135deg, var(--primary-blue) 0%, #006699 100%);
+            color: var(--white);
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .hero-valencia h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero-valencia .location-badge {
+            display: inline-block;
+            background: var(--bright-red);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .hero-valencia p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+        .coming-soon-badge {
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 0.75rem 2rem;
+            border-radius: var(--border-radius);
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .offering-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            height: 100%;
+        }
+        .offering-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .offering-card h3 {
+            margin-bottom: 1rem;
+        }
+        .offering-card p {
+            color: var(--text-medium);
+        }
+        .signup-form {
+            background: var(--primary-blue);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            color: var(--white);
+            text-align: center;
+        }
+        .signup-form h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+        .signup-form p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        .signup-form form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .signup-form input[type="email"],
+        .signup-form input[type="text"] {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .signup-form .btn {
+            width: 100%;
+        }
+        .signup-form .privacy-note {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+        .teacher-feature {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+        }
+        .teacher-feature-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 3.5rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .teacher-feature-info h3 {
+            margin-bottom: 0.5rem;
+        }
+        .teacher-feature-info .title {
+            color: var(--bright-red);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .spain-flag {
+            font-size: 2rem;
+            margin-left: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .hero-valencia h1 { font-size: 2.25rem; }
+            .teacher-feature { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                </a>
+                <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#book" class="btn btn-primary btn-small">Book Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-valencia">
+        <div class="container">
+            <img src="assets/images/logo.png" alt="English Conmigo" style="height: 80px; margin: 0 auto 1.5rem; border-radius: 8px;">
+            <div class="location-badge">Valencia, Spain <span class="spain-flag">&#127466;&#127480;</span></div>
+            <h1>English Conmigo is Coming to Valencia!</h1>
+            <div class="coming-soon-badge">Coming 2026</div>
+            <p>Join us for in-person English classes, conversation groups, and children's activities in Valencia this year.</p>
+        </div>
+    </section>
+
+    <!-- What We're Offering -->
+    <section class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We're Bringing to Valencia</h2>
+                <p>For a limited time, English Conmigo will be offering in-person sessions in Valencia.</p>
+            </div>
+            <div class="grid-3">
+                <div class="offering-card">
+                    <div class="icon">&#128100;</div>
+                    <h3>1-to-1 Lessons</h3>
+                    <p>Intensive, personalised English lessons tailored to your specific goals. Perfect for rapid improvement.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="icon">&#128101;</div>
+                    <h3>Group Conversation Classes</h3>
+                    <p>Small group sessions focused on real conversation practice. A fun way to build confidence with other learners.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="icon">&#127880;</div>
+                    <h3>Children's Activities</h3>
+                    <p>Fun, engaging English activities for kids. Learn through games, stories, and creative play.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Ali -->
+    <section class="section-grey">
+        <div class="container">
+            <div class="container-narrow">
+                <div class="teacher-feature">
+                    <div class="teacher-feature-photo">A</div>
+                    <div class="teacher-feature-info">
+                        <h3>Meet Ali</h3>
+                        <p class="title">Founder & Teacher</p>
+                        <p>Ali is the founder of English Conmigo, Cambridge CELTA qualified with over 10 years of international teaching experience. He has taught students in Colombia, Japan, and online from around the world.</p>
+                        <p style="margin-top: 1rem;">Ali will be in Valencia for a limited time, bringing his engaging, conversation-focused teaching style to in-person sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section class="section-white">
+        <div class="container">
+            <div class="container-narrow">
+                <div class="signup-form">
+                    <h2>Be the First to Know</h2>
+                    <p>Sign up to receive updates about dates, locations, and how to book your spot in Valencia.</p>
+                    <form action="https://formspree.io/f/mqedzdra" method="POST">
+                        <input type="hidden" name="_subject" value="Valencia Interest Signup">
+                        <input type="hidden" name="source" value="valencia-landing-page">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Keep Me Updated</button>
+                    </form>
+                    <p class="privacy-note">We'll only email you about Valencia sessions. No spam, unsubscribe anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meanwhile Online -->
+    <section class="section-grey">
+        <div class="container text-center">
+            <h2>Can't Wait? Start Learning Online</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem; color: var(--text-medium);">Our online lessons are available now. Build your English skills before we arrive in Valencia, or continue learning with us from anywhere in the world.</p>
+            <a href="index.html#book" class="btn btn-primary">Book an Online Lesson</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                    <p>Teaching English with confidence since 2017. A modern online academy focused on conversation, confidence, and enjoyment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Our Teachers</a></li>
+                        <li><a href="method.html">Our Method</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/englishconmigo" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:hello@englishconmigo.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 English Conmigo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

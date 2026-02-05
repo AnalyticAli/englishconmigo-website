@@ -85,16 +85,27 @@
             font-weight: 500;
         }
 
+        .flag-carousel-container {
+            position: relative;
+            max-width: 800px;
+            margin: 2rem auto 0;
+            padding: 0 3rem;
+        }
+
+        .flag-carousel {
+            overflow: hidden;
+        }
+
         .country-flags {
             display: flex;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
+            gap: 2rem;
+            transition: transform 0.3s ease;
         }
 
         .country-flag {
             text-align: center;
+            flex: 0 0 auto;
+            min-width: 100px;
         }
 
         .country-flag .flag {
@@ -106,6 +117,37 @@
             display: block;
             color: var(--text-medium);
             font-size: 0.875rem;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            z-index: 10;
+        }
+
+        .carousel-btn:hover {
+            background-color: var(--bright-red);
+        }
+
+        .carousel-btn.prev {
+            left: 0;
+        }
+
+        .carousel-btn.next {
+            right: 0;
         }
 
         @media (max-width: 768px) {
@@ -158,31 +200,61 @@
                 <p>We're proud to help English learners from many different countries.</p>
             </div>
 
-            <div class="country-flags">
-                <div class="country-flag">
-                    <div class="flag">&#127480;&#127462;</div>
-                    <span>Saudi Arabia</span>
+            <div class="flag-carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#8249;</button>
+                <div class="flag-carousel">
+                    <div class="country-flags" id="flagsContainer">
+                        <div class="country-flag">
+                            <div class="flag">&#127480;&#127462;</div>
+                            <span>Saudi Arabia</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127464;&#127476;</div>
+                            <span>Colombia</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127462;&#127466;</div>
+                            <span>UAE</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127471;&#127477;</div>
+                            <span>Japan</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127463;&#127479;</div>
+                            <span>Brazil</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127474;&#127485;</div>
+                            <span>Mexico</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127466;&#127480;</div>
+                            <span>Spain</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127463;&#127462;</div>
+                            <span>Bosnia</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127472;&#127484;</div>
+                            <span>Kuwait</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127464;&#127475;</div>
+                            <span>China</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127469;&#127472;</div>
+                            <span>Hong Kong</span>
+                        </div>
+                        <div class="country-flag">
+                            <div class="flag">&#127481;&#127479;</div>
+                            <span>Turkey</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="country-flag">
-                    <div class="flag">&#127464;&#127476;</div>
-                    <span>Colombia</span>
-                </div>
-                <div class="country-flag">
-                    <div class="flag">&#127462;&#127466;</div>
-                    <span>UAE</span>
-                </div>
-                <div class="country-flag">
-                    <div class="flag">&#127471;&#127477;</div>
-                    <span>Japan</span>
-                </div>
-                <div class="country-flag">
-                    <div class="flag">&#127463;&#127479;</div>
-                    <span>Brazil</span>
-                </div>
-                <div class="country-flag">
-                    <div class="flag">&#127474;&#127485;</div>
-                    <span>Mexico</span>
-                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">&#8250;</button>
             </div>
         </div>
     </section>
@@ -338,7 +410,7 @@
                     <ul>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -359,6 +431,21 @@
     <script>
         function toggleMenu() {
             document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Flag carousel
+        let carouselPosition = 0;
+        const flagsContainer = document.getElementById('flagsContainer');
+        const flags = document.querySelectorAll('.country-flag');
+        const flagWidth = 120; // approximate width + gap
+        const visibleFlags = 6;
+        const maxPosition = flags.length - visibleFlags;
+
+        function moveCarousel(direction) {
+            carouselPosition += direction;
+            if (carouselPosition < 0) carouselPosition = 0;
+            if (carouselPosition > maxPosition) carouselPosition = maxPosition;
+            flagsContainer.style.transform = `translateX(-${carouselPosition * flagWidth}px)`;
         }
     </script>
 </body>

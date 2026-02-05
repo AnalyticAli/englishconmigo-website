@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about English Conmigo online English lessons. Learn about pricing, scheduling, cancellations, and more.">
+    <meta name="keywords" content="English Conmigo FAQ, online English lessons questions, ESL FAQ">
+
+    <title>FAQ - English Conmigo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <style>
+        .faq-item {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-blue);
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: var(--light-grey);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 400;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+
+        .faq-category {
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-category h3 {
+            color: var(--primary-blue);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bright-red);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                </a>
+                <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="teachers.html">Our Teachers</a></li>
+                    <li><a href="method.html">Our Method</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#book" class="btn btn-primary btn-small">Book a Lesson</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know about learning with English Conmigo.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-white">
+        <div class="container">
+            <div class="container-narrow">
+
+                <!-- Getting Started -->
+                <div class="faq-category">
+                    <h3>Getting Started</h3>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How do I book my first lesson?
+                    </div>
+                    <div class="faq-answer">
+                        Simply click any "Book a Lesson" button on our website, which will take you to our Calendly scheduling page. Choose a time that works for you, and you'll receive a confirmation email with the Zoom link for your lesson.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What do I need for online lessons?
+                    </div>
+                    <div class="faq-answer">
+                        You'll need a stable internet connection, a computer or tablet with a camera and microphone, and Zoom installed (free to download). A quiet space where you can speak freely is also helpful for getting the most out of your lesson.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What level of English do I need?
+                    </div>
+                    <div class="faq-answer">
+                        We work with students from elementary to advanced levels. Our lessons are tailored to your current level, so don't worry if you're a beginner. We'll meet you where you are and help you progress at your own pace.
+                    </div>
+                </div>
+
+                <!-- Lessons & Scheduling -->
+                <div class="faq-category">
+                    <h3>Lessons & Scheduling</h3>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How long are the lessons?
+                    </div>
+                    <div class="faq-answer">
+                        Each lesson is 55 minutes long. This gives us enough time for meaningful conversation practice, grammar work, and feedback, while keeping sessions focused and energising.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What if I need to cancel a lesson?
+                    </div>
+                    <div class="faq-answer">
+                        We understand things come up! Please give us at least 24 hours notice to reschedule without charge. Late cancellations may be charged as the lesson slot was held for you.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Can I change my regular lesson time?
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we're flexible! Just let us know in advance and we'll work with you to find a new time that suits your schedule.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What's included in a lesson?
+                    </div>
+                    <div class="faq-answer">
+                        Each lesson includes 55 minutes of personalised instruction, conversation practice, feedback on your English, and follow-up materials or notes as needed. We focus on what you need most, whether that's speaking confidence, grammar, vocabulary, or pronunciation.
+                    </div>
+                </div>
+
+                <!-- Payment & Packages -->
+                <div class="faq-category">
+                    <h3>Payment & Packages</h3>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How do I pay for lessons?
+                    </div>
+                    <div class="faq-answer">
+                        We accept payment via Stripe (credit/debit cards). For lesson packages, you'll receive a secure payment link. Single lessons can be paid when booking through Calendly.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do lesson packages expire?
+                    </div>
+                    <div class="faq-answer">
+                        5-lesson packs should be used within 3 months, and 10-lesson packs within 6 months. If you need an extension, just let us know - we're flexible!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do you offer refunds?
+                    </div>
+                    <div class="faq-answer">
+                        Unused lessons in packages can be refunded within 30 days of purchase. After that, packages are non-refundable but can be transferred to another student with our approval.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Why should I buy a package instead of single lessons?
+                    </div>
+                    <div class="faq-answer">
+                        Packages offer better value (you save money per lesson) and help ensure consistency in your learning. Regular practice is the key to improvement, and packages encourage you to commit to your progress.
+                    </div>
+                </div>
+
+                <!-- About Our Teachers -->
+                <div class="faq-category">
+                    <h3>About Our Teachers</h3>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Are your teachers qualified?
+                    </div>
+                    <div class="faq-answer">
+                        Yes! All our teachers hold Cambridge CELTA qualifications (or equivalent) and have years of international teaching experience. We only work with teachers who share our passion for engaging, conversation-focused lessons.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Can I choose my teacher?
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Visit our <a href="teachers.html">Teachers page</a> to learn about each teacher's background and specialties. Choose the one who best fits your goals and learning style.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Can I switch teachers if it's not a good fit?
+                    </div>
+                    <div class="faq-answer">
+                        Of course. Finding the right teacher is important for your progress. If you'd like to try a different teacher, just let us know and we'll arrange it.
+                    </div>
+                </div>
+
+                <!-- Other Questions -->
+                <div class="faq-category">
+                    <h3>Other Questions</h3>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do you offer group classes?
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We offer small group conversation classes (maximum 6 students) which are a great way to practise speaking with other learners at your level. Check our <a href="pricing.html">Pricing page</a> for details.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do you offer corporate training?
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we work with businesses to improve their team's English communication skills. <a href="contact.html">Contact us</a> to discuss your company's specific needs and we'll create a tailored programme.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        I have another question not listed here.
+                    </div>
+                    <div class="faq-answer">
+                        No problem! <a href="contact.html">Get in touch</a> and we'll be happy to help. We typically respond within 24 hours.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Learning?</h2>
+            <p>Book a lesson and discover how enjoyable English learning can be.</p>
+            <a href="index.html#book" class="btn btn-primary">Book a Lesson</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="English Conmigo">
+                    <p>Teaching English with confidence since 2017. A modern online academy focused on conversation, confidence, and enjoyment.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Our Teachers</a></li>
+                        <li><a href="method.html">Our Method</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/englishconmigo" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:hello@englishconmigo.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 English Conmigo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

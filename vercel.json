@@ -1,0 +1,20 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/spanish",
+      "destination": "/espanol",
+      "permanent": true
+    },
+    {
+      "source": "/ar",
+      "destination": "/arabic",
+      "permanent": true
+    },
+    {
+      "source": "/es",
+      "destination": "/espanol",
+      "permanent": true
+    }
+  ]
+}

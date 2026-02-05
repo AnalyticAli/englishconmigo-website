@@ -179,7 +179,85 @@
         <div class="container">
             <div class="section-header">
                 <h2>What Our Students Say</h2>
+                <p>Trusted by students from around the world.</p>
             </div>
+
+            <!-- Country Flags Carousel -->
+            <style>
+                .flag-carousel-container {
+                    position: relative;
+                    max-width: 700px;
+                    margin: 0 auto 3rem;
+                    padding: 0 3rem;
+                }
+                .flag-carousel {
+                    overflow: hidden;
+                }
+                .country-flags-home {
+                    display: flex;
+                    gap: 1.5rem;
+                    transition: transform 0.3s ease;
+                }
+                .country-flag-home {
+                    text-align: center;
+                    flex: 0 0 auto;
+                    min-width: 80px;
+                }
+                .country-flag-home .flag {
+                    font-size: 2.5rem;
+                    margin-bottom: 0.25rem;
+                }
+                .country-flag-home span {
+                    display: block;
+                    color: var(--text-medium);
+                    font-size: 0.75rem;
+                }
+                .carousel-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background-color: var(--primary-blue);
+                    color: var(--white);
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background-color 0.3s ease;
+                    z-index: 10;
+                }
+                .carousel-btn:hover {
+                    background-color: var(--bright-red);
+                }
+                .carousel-btn.prev { left: 0; }
+                .carousel-btn.next { right: 0; }
+            </style>
+
+            <div class="flag-carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#8249;</button>
+                <div class="flag-carousel">
+                    <div class="country-flags-home" id="flagsContainer">
+                        <div class="country-flag-home"><div class="flag">&#127480;&#127462;</div><span>Saudi Arabia</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127464;&#127476;</div><span>Colombia</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127462;&#127466;</div><span>UAE</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127471;&#127477;</div><span>Japan</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127463;&#127479;</div><span>Brazil</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127474;&#127485;</div><span>Mexico</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127466;&#127480;</div><span>Spain</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127463;&#127462;</div><span>Bosnia</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127472;&#127484;</div><span>Kuwait</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127464;&#127475;</div><span>China</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127469;&#127472;</div><span>Hong Kong</span></div>
+                        <div class="country-flag-home"><div class="flag">&#127481;&#127479;</div><span>Turkey</span></div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">&#8250;</button>
+            </div>
+
             <div class="grid-2">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
@@ -301,6 +379,21 @@
     <script>
         function toggleMenu() {
             document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Flag carousel
+        let carouselPosition = 0;
+        const flagsContainer = document.getElementById('flagsContainer');
+        const flags = document.querySelectorAll('.country-flag-home');
+        const flagWidth = 95; // approximate width + gap
+        const visibleFlags = 6;
+        const maxPosition = flags.length - visibleFlags;
+
+        function moveCarousel(direction) {
+            carouselPosition += direction;
+            if (carouselPosition < 0) carouselPosition = 0;
+            if (carouselPosition > maxPosition) carouselPosition = maxPosition;
+            flagsContainer.style.transform = `translateX(-${carouselPosition * flagWidth}px)`;
         }
     </script>
 </body>
